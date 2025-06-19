@@ -1,0 +1,50 @@
+<h2>Patients</h2>
+
+<mat-form-field class="example-full-width">
+  <mat-label>Patient name</mat-label>
+  <input [(ngModel)]="searchText"
+         matInput
+         placeholder="Search text...">
+</mat-form-field>
+@for (patient of patientsList.value(); track patient.id) {
+  <div>
+    <span>{{ patient.title }}</span>
+  </div>
+}
+
+
+<!--table [dataSource]="patientsList"
+       class="mat-elevation-z8"
+       mat-table>
+  <ng-container matColumnDef="name">
+    <th *matHeaderCellDef
+        mat-header-cell> Name
+    </th>
+    <td *matCellDef="let element"
+        mat-cell> {{ element.name }}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="age">
+    <th *matHeaderCellDef
+        mat-header-cell> Age
+    </th>
+    <td *matCellDef="let element"
+        mat-cell> {{ element.age }}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="sex">
+    <th *matHeaderCellDef
+        mat-header-cell> Sex
+    </th>
+    <td *matCellDef="let element"
+        mat-cell> {{ element.sex }}
+    </td>
+  </ng-container>
+
+  <tr *matHeaderRowDef="displayedColumns"
+      mat-header-row></tr>
+  <tr *matRowDef="let row; columns: displayedColumns;"
+      mat-row></tr>
+</table-->

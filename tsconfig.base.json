@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "doctors-page": ["libs/pages/doctors/src/index.ts"],
+      "home-page": ["libs/pages/home/src/index.ts"],
+      "patients-page": ["libs/pages/patients/src/index.ts"]
+    }
+  }
+}
