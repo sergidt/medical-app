@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "api-models": ["libs/shared/api-models/src/index.ts"],
       "doctors-page": ["libs/pages/doctors/src/index.ts"],
       "home-page": ["libs/pages/home/src/index.ts"],
       "patients-page": ["libs/pages/patients/src/index.ts"]
